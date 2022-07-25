@@ -1,0 +1,269 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+background: #F0F0F0;
+height: 926px;
+width: 428px;
+}
+
+header{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+width: 126px;
+height: 49px;
+position: absolute;
+left: 130px;
+top: 20px;
+}
+
+.logo {
+ width: 13px;
+height: 20px;
+}
+
+p {
+  font-family: Inter;
+font-size: 24px;
+font-weight: 800;
+line-height: 29px;
+letter-spacing: 0em;
+color: #0500FFBF;
+
+}
+form {
+position: absolute;
+width: 356px;
+height: 554px;
+left: 36px;
+top: 148px;
+}
+
+.form-frame {
+border-radius: 20px;
+background: #FFFAFA;
+height: 554px;
+width: 356px;
+box-shadow: 2px 23px 20px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper-alignment {
+width: 324px;
+height: 448.11px;
+display: flex;
+flex-direction: column;
+position: absolute;
+left: 16px;
+top: 48px;
+padding: 0px;
+gap: 48px; 
+  
+}
+
+.field-wrap{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+width: 324px;
+height: 353.11px;
+}
+
+.flex-input-icons {
+  display: flex;
+}
+
+.mail-icon {
+height: 15px;
+width: 15px;
+position: absolute;
+top: 38.5px;
+left: 15px;
+
+}
+
+.phone-icon {
+height: 20px;
+width: 20px;
+position: absolute;
+top: 130px;
+left: 15px;
+}
+
+.naira-icon {
+height: 15px;
+width: 15px;
+position: absolute;
+top: 227px;
+left: 15px;
+}
+
+input::placeholder {
+padding-left: 40px;
+font-family: Inter;
+font-size: 12px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+
+
+}
+
+.email-box {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+width: 324px;
+height: 70px;
+}
+
+.phone-box {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+width: 324px;
+height: 70.56px;
+}
+
+.amount-box {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+width: 324px;
+height: 70.56px;
+
+}
+
+.recharge-type-box {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+width: 324px;
+height: 70px;
+}
+
+.recharge-type-btn {
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+width: 324px;
+height: 47px;
+}
+
+.input-label {
+  font-family: Inter;
+font-size: 12px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+}
+
+/* .email, .phone, .amount {
+  
+} */
+.email {
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+padding: 16px;
+gap: 32px;
+border: 1px solid #000000;
+border-radius: 8px;
+height: 47px;
+width: 324px;
+/* background: url("logo.jpeg") no-repeat left;
+background-size: 20px;
+text-align: center;
+  */
+}
+
+.phone {
+border-radius: 8px;
+padding: 16px;
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+gap: 27px;
+width: 324px;
+height: 47.56px;
+border: 1px solid #000000;
+
+}
+
+
+.amount {
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+padding: 16px;
+gap: 32px;
+width: 324px;
+height: 47.56px;
+border: 1px solid #000000;
+border-radius: 8px;
+
+}
+
+.Airtime {
+height: 47px;
+width: 154px;
+border-radius: 8px;
+padding: 16px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+gap: 10px;
+background: #3A3434;
+}
+
+.airtime-text, .data, .recharge-now {
+  font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+}
+
+.airtime-text {
+  color: #FFFFFF;
+}
+
+
+.Data {
+  width: 154px;
+height: 47px;
+border: 1px solid #000000;
+border-radius: 8px;
+color: #3A3434;
+
+}
+
+.recharge-now {
+  width: 324px;
+height: 47px;
+background: #0500FF;
+box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+border: none;
+outline: none;
+color: #FFFFFF;
+
+}

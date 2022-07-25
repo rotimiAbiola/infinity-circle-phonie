@@ -1,19 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phonie</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+
+
+  <div class="container">
+    <header>
+      <img src="icons/phonie-logo.png" alt="logo" class="logo">
+      <p>Phonie</p>
+    </header>
+
+    <form action="#" method="#">
+      <section class="form-frame">
+        <div class="wrapper-alignment">
+          <div class="field-wrap">
+            <div class="email-box">
+              <label for="email" class="input-label">Email Address</label>
+              <div class="flex-input-icons"> <img class="mail-icon" src="icons/Mail.png"> <input type="email"
+                  class="email" id="email" placeholder="Enter email address"> </div>
+            </div>
+            <div class="phone-box">
+              <label for="phone" class="input-label">Phone Number</label>
+              <div class="flex-input-icons">
+                <img class="phone-icon" src="icons/Phone.png">
+                <input type="tel" class="phone" id="phone" placeholder="Enter phone number">
+              </div>
+            </div>
+            <div class="amount-box">
+              <label for="amount" class="input-label">Amount</label>
+              <div class="flex-input-icons">
+                <img class="naira-icon" src="icons/Naira.png">
+                <input type="number" class="amount" id="amount" placeholder="Enter recharge amount">
+              </div>
+            </div>
+            <div class="recharge-type-box">
+              <label class="input-label">Recharge Type</label>
+              <div class="recharge-type-btn">
+                <button class="Airtime">
+                  <span class="airtime-text">Airtime</span><span class="airtime-icon"><img
+                      src="icons/circled-tick-icon.png"></span>
+                </button>
+                <button class="Data">Data</button>
+              </div>
+
+            </div>
+          </div>
+          <button class="recharge-now">Recharge now</button>
+        </div>
+      </section>
+
+    </form>
+
+  </div>
+
+
+
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
