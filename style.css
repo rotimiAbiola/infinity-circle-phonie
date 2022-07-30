@@ -1,269 +1,142 @@
 *{
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    background: #F0F0F0;
+
+}
+/* Logo */
+.phonie{
+    margin-left: 5%;
 }
 
 .container{
-background: #F0F0F0;
-height: 926px;
-width: 428px;
+    max-width: 480px;
+    max-height: 527px;
+    margin: 0 auto;
+    padding: 35px;
+    border-radius: 16px;
+    background: #FFFAFA;
+    box-shadow: 2px 23px 20px rgba(0, 0, 0, 0.25)
 }
 
-header{
-  display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px;
-gap: 10px;
-width: 126px;
-height: 49px;
-position: absolute;
-left: 130px;
-top: 20px;
+.inputCustomize{
+    margin-top: 5%;
 }
 
-.logo {
- width: 13px;
-height: 20px;
+.inputDesign{
+    width: 100%;
+    height: 48px;
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.rechargeCategory{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.buttonData{
+    width: 40%;  
+    height: 48px; 
+    background: rgba(255, 250, 250, 1) no-repeat left;
+    border-radius: 8px;
+    color: #3A3434;
+    border: 1px solid rgba(58, 52, 52, 1);
+    background-image: url("./icons/circled-tick-icon.svg");
+    background-position-x: 130px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+}
+.buttonAirtime{
+    color: #FFFFFF;
+    width: 40%;
+    height: 48px;
+    background: rgba(58, 52, 52, 1) no-repeat left;
+    border: 1px solid rgba(58, 52, 52, 1);
+    border-radius: 8px;
+    background-image: url("./icons/circled-tick-icon.svg");
+    background-position-x: 130px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
 }
 
-p {
-  font-family: Inter;
-font-size: 24px;
-font-weight: 800;
-line-height: 29px;
-letter-spacing: 0em;
-color: #0500FFBF;
-
+.buttonSubmit{
+    margin-top: 7%;
+    display: flex;
+    height: 48px;
+    justify-content: center;  
 }
-form {
-position: absolute;
-width: 356px;
-height: 554px;
-left: 36px;
-top: 148px;
-}
-
-.form-frame {
-border-radius: 20px;
-background: #FFFAFA;
-height: 554px;
-width: 356px;
-box-shadow: 2px 23px 20px rgba(0, 0, 0, 0.25);
+.recharge{
+    text-align: center;
+    width: 100%;
+    padding: 4%;
+    background: rgba(5, 0, 255, 1);
+    border: 1px solid blue;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    font-weight: 700;
 }
 
-.wrapper-alignment {
-width: 324px;
-height: 448.11px;
-display: flex;
-flex-direction: column;
-position: absolute;
-left: 16px;
-top: 48px;
-padding: 0px;
-gap: 48px; 
-  
+.airtimeText{
+    display: flex;
+    justify-content: space-around;
 }
-
-.field-wrap{
-  display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 24px;
-width: 324px;
-height: 353.11px;
-}
-
-.flex-input-icons {
-  display: flex;
-}
-
-.mail-icon {
-height: 15px;
-width: 15px;
-position: absolute;
-top: 38.5px;
-left: 15px;
-
-}
-
-.phone-icon {
-height: 20px;
-width: 20px;
-position: absolute;
-top: 130px;
-left: 15px;
-}
-
-.naira-icon {
-height: 15px;
-width: 15px;
-position: absolute;
-top: 227px;
-left: 15px;
-}
-
-input::placeholder {
-padding-left: 40px;
-font-family: Inter;
-font-size: 12px;
-font-weight: 400;
-line-height: 15px;
-letter-spacing: 0em;
-
-
-}
-
-.email-box {
-  display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 8px;
-width: 324px;
-height: 70px;
-}
-
-.phone-box {
-  display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 8px;
-width: 324px;
-height: 70.56px;
-}
-
-.amount-box {
-  display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 8px;
-width: 324px;
-height: 70.56px;
-
-}
-
-.recharge-type-box {
-  display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 8px;
-width: 324px;
-height: 70px;
-}
-
-.recharge-type-btn {
-  display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 16px;
-width: 324px;
-height: 47px;
-}
-
-.input-label {
-  font-family: Inter;
-font-size: 12px;
-font-weight: 400;
-line-height: 15px;
-letter-spacing: 0em;
-}
-
-/* .email, .phone, .amount {
-  
-} */
 .email {
-box-sizing: border-box;
-display: flex;
-flex-direction: row;
-padding: 16px;
-gap: 32px;
-border: 1px solid #000000;
-border-radius: 8px;
-height: 47px;
-width: 324px;
-/* background: url("logo.jpeg") no-repeat left;
-background-size: 20px;
-text-align: center;
-  */
+    padding-left: 60px;
+    background: no-repeat left;
+    background-image: url("./icons/mail-icon.svg");
+    background-size: 18px 24px;
+    background-position-x: 15px;
 }
-
 .phone {
-border-radius: 8px;
-padding: 16px;
-box-sizing: border-box;
-display: flex;
-flex-direction: row;
-gap: 27px;
-width: 324px;
-height: 47.56px;
-border: 1px solid #000000;
-
+    padding-left: 60px;
+    background: no-repeat left;
+    background-image: url("./icons/phone-icon.svg");
+    background-size: 18px 24px;
+    background-position-x: 15px;
 }
-
 
 .amount {
-box-sizing: border-box;
-display: flex;
-flex-direction: row;
-padding: 16px;
-gap: 32px;
-width: 324px;
-height: 47.56px;
-border: 1px solid #000000;
-border-radius: 8px;
-
-}
-
-.Airtime {
-height: 47px;
-width: 154px;
-border-radius: 8px;
-padding: 16px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-gap: 10px;
-background: #3A3434;
-}
-
-.airtime-text, .data, .recharge-now {
-  font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0em;
-}
-
-.airtime-text {
-  color: #FFFFFF;
+    padding-left: 60px;
+    background: no-repeat left;
+    background-image: url("./icons/naira-sign.svg");
+    background-size: 18px 24px;
+    background-position-x: 15px;
 }
 
 
-.Data {
-  width: 154px;
-height: 47px;
-border: 1px solid #000000;
-border-radius: 8px;
-color: #3A3434;
+/* Media Queries */
+@media screen and (max-width: 420px) {
+    body{
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+    .container{
+        width: 90%;
+        height: 926px;
+        padding-right: 20px;
+        padding-left: 20px;
+      
+    }
+    .phonie{
+    margin: 10% 0 15% 32%;
+    }
 
-}
-
-.recharge-now {
-  width: 324px;
-height: 47px;
-background: #0500FF;
-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
-border-radius: 8px;
-border: none;
-outline: none;
-color: #FFFFFF;
-
+    .buttonSubmit {
+    margin-top: 20%
+    }
 }
