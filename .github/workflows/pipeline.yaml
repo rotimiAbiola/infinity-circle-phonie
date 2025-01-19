@@ -1,0 +1,55 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  ACR_REGISTRY: ${{ vars.ACR_REGISTRY }}
+  IMAGE_NAME: phonie
+  CLUSTER_NAME: project-aks
+  CLUSTER_RESOURCE_GROUP: aks_cluster
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Azure login
+      uses: azure/login@v1
+      with:
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+    - name: Build and push image to ACR
+      run: |
+        az acr login --name ${{ env.ACR_REGISTRY }}
+        docker build -t ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }} .
+        docker push ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+        
+    # - name: Get AKS credentials
+    #   uses: azure/aks-set-context@v3
+    #   with:
+    #     cluster-name: ${{ env.CLUSTER_NAME }}
+    #     resource-group: ${{ env.CLUSTER_RESOURCE_GROUP }}
+
+    # - name: Setup kustomize
+    #   uses: imranismail/setup-kustomize@v2
+
+    # - name: Update kustomization image
+    #   run: |
+    #     cd k8s/base
+    #     kustomize edit set image yourregistry.azurecr.io/js-app=${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+
+    # - name: Deploy to AKS
+    #   run: |
+    #     cd k8s/overlays/production
+    #     kustomize build . | kubectl apply -f -

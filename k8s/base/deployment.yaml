@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: phonie-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phonie-app
+  template:
+    metadata:
+      labels:
+        app: phonie-app
+    spec:
+      containers:
+        - name: phonie-app
+          image: yourregistry.azurecr.io/js-app:latest
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "200m"
+              memory: "256Mi"
